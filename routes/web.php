@@ -11,7 +11,34 @@
 |
 */
 
-$router->get('/',[
-    'as' => 'home',
-    'uses' => 'Web\HomeController@index',
-]);
+$router->get(
+    '/',
+    [
+        'as'   => 'home',
+        'uses' => 'Web\HomeController@index',
+    ]
+);
+
+$router->get(
+    '/about',
+    [
+        'as'   => 'about',
+        'uses' => 'Web\HomeController@about',
+    ]
+);
+
+$router->get(
+    '/portfolio',
+    [
+        'as'   => 'portfolio',
+        'uses' => 'Web\HomeController@portfolio',
+    ]
+);
+
+$router->get(
+    '/contact',
+    [
+        'as'   => 'contact',
+        'uses' => 'Web\HomeController@contact',
+    ]
+);
